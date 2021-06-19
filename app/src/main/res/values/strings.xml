@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">NewsApp</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="image_content_description">News image</string>
+    <string name="all_news_menu_item">Новые</string>
+    <string name="showed_menu_item">Просмотренные</string>
+</resources>

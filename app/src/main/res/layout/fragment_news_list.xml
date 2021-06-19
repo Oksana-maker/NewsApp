@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:weightSum="1"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/news_list_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+    <androidx.core.widget.ContentLoadingProgressBar
+        android:layout_width="match_parent"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_height="50dp"
+        android:id="@+id/progress_bar"
+        android:indeterminate="true"/>
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_nav"
+        app:menu="@menu/menu_bottom_nav"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_width="match_parent" />
+</androidx.appcompat.widget.LinearLayoutCompat>
